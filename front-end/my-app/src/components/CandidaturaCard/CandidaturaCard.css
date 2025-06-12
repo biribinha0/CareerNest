@@ -1,0 +1,35 @@
+.text-laranja {
+    color: #ff6600;
+}
+
+.linha {
+    height: 2px;
+    width: 100%;
+    background-color: var(--laranja);
+    margin-top: 12px;
+}
+
+.verDetalhes {
+    color: var(--laranja);
+}
+
+
+.visualizado {
+    background: #ffd000;
+    color: rgb(255, 249, 242);
+}
+
+.pendente {
+    background: #b4b4b4;
+    color: rgb(255, 249, 242);
+}
+
+.rejeitado {
+    background: #ff2414;
+    color: rgb(255, 249, 242);
+}
+
+.aprovado {
+    background: rgb(83, 160, 2);
+    color: rgb(255, 249, 242);
+}

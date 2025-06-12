@@ -1,0 +1,91 @@
+:root {
+    --cinza: #f8f8fa;
+    --laranja: #bd4b0d;
+    --laranja-opacidade: #bd4b0da9;
+    --amarelo: #eda92a;
+    --laranja-claro: #d94f04;
+    --amarelo-claro: #fabe4e;
+    --verde-agua: #007172;
+}
+.titlecard{
+    color: #cf6e39;
+}
+
+.btn-pagina {
+    all: unset;
+    color: #fff;
+    transition: .2s;
+}
+
+.ativo {
+    background-color: var(--laranja);
+}
+.inativo{
+    background-color: var(--laranja-opacidade);
+}
+.ativo:hover{
+    background-color: var(--laranja-claro);
+}
+
+.inativo:hover{
+    background-color: var(--laranja);
+}
+.inativo:hover .ativo{
+    background-color: rebeccapurple;
+}
+.page-container{
+    border-top: 2px solid var(--laranja);
+}
+.btn-sair{
+    all: unset;
+    background-color: #b50202;
+    color: #fff;
+    box-shadow: 0 2px 5px #00000054;
+    transition: .2s;
+}
+.btn-sair:hover{
+    background-color: #ac0202;
+    box-shadow: 0 2px 10px #00000081;
+}
+.btn-sair:active{
+    background-color: #ec0505;
+}
+
+.txt-laranja{
+    color: var(--laranja-claro);
+}
+.candidato-nome{
+    color: var(--verde-agua);
+}
+
+.explorar-vagas{
+    color: var(--verde-agua);
+    text-decoration: underline !important;
+}
+.explorar-vagas:hover{
+    filter: brightness(.8);
+}
+.icon-lg {
+    font-size: 5rem; 
+}
+
+.icon-lg{
+    color: #bd4b0da9;
+}
+
+.acessarbotao{
+    color: #d94f04;
+}
+/* .bi:hover{
+    color: #bd4b0d;
+} */
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+

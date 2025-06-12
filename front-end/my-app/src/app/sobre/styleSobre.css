@@ -1,0 +1,136 @@
+:root {
+
+    /* Paleta de Cores da Empresa */
+    --midnight-green: #025259ff;
+    --caribbean-current: #007172ff;
+    --carrot-orange: #f29325ff;
+    --syracuse-red-orange: #d94f04ff;
+    --isabelline: #f5f0efff;
+    --azure-web: #f0ffffff;
+
+}
+
+.banner-verde {
+    background-color: var(--caribbean-current);
+    color: white;
+}
+
+.texto-querido-apresentacao h1 {
+    color: var(--carrot-orange);
+}
+
+.textoprincipal span {
+    color: #007172ff;
+}
+
+.bg-laranja {
+    background-color: var(--carrot-orange);
+    color: white;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url('/fonts/Oswald/Oswald-Light.ttf');
+}
+
+.oswaldo h2 {
+    font-family: 'Oswald', Courier, monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.bg-branco {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-maior span {
+    color: var(--carrot-orange);
+}
+
+.borda {
+    border-color: red;
+}
+
+.titulogrande {
+    font-size: 380% !important;
+}
+
+.titulograndemenor {
+    font-size: 280%;
+}
+
+.textodelimitado {
+    width: 80%;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.estrelas {
+    padding-top: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.estrelas>* {
+    position: relative;
+    z-index: 1;
+    padding: 12px;
+}
+
+/* Adiciona a estrela como fundo transparente */
+.estrelas>*::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(https://cdn-icons-png.flaticon.com/256/1828/1828884.png);
+    background-position: 0% 20%;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    /* controle aqui o "esmaecimento" */
+    z-index: -1;
+    transition: .3s;
+}
+
+.estrelas>*:hover::before {
+    opacity: 1;
+    background-position: 0% 0%;
+}
+.estrelas>*:hover{
+    cursor: default;
+}
+
+@media (max-width: 576px) {
+    .estrelas>*::before {
+        background-size: 25%;     /* menor tamanho da estrela */
+        background-position: 0% 10%; /* melhor alinhamento para menor */
+        opacity: 0.2 !important;  /* fixa a opacidade */
+        transition: none !important;
+    }
+
+    .estrelas>*:hover::before {
+        opacity: 0.2 !important;  /* impede que aumente no hover */
+        background-position: 0% 10% !important;
+    }
+
+    .estrelas>*:hover {
+        cursor: default !important;  /* mantém o cursor padrão */
+    }
+    
+    .titulogrande{
+        font-size: 2.5rem !important;
+    }
+    .titulograndemenor{
+        font-size: 2rem !important;
+    }
+}

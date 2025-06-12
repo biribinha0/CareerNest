@@ -1,0 +1,26 @@
+h5.titulos{
+    color: var(--laranja);
+}
+
+.skillslist li{
+    padding: 10px;
+    width: 100px;
+}
+
+.skillslist li:nth-child(odd) {
+  background-color: var(--laranja);
+  color: white;
+}
+
+.skillslist li:nth-child(even) {
+  background-color: var(--caribbean-current); 
+  color: white;
+}
+
+button.buttonEditar{
+    background-color: var(--caribbean-current);
+    padding: 10px;
+    height: 45px;
+    border: none;
+    border-radius: 15px;
+}

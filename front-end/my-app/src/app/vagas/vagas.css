@@ -1,0 +1,30 @@
+/* Botões de paginação normais */
+.pageButton {
+  background-color: var(--caribbean-current) !important; /* azul */
+  color: white !important;
+  border: none !important;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 0 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover nos botões */
+.pageButton:hover {
+  background-color: var(--midnight-green) !important; /* azul mais escuro */
+}
+
+/* Botão ativo */
+.activeButton {
+  background-color: var(--midnight-green) !important; /* verde para o botão ativo */
+  color: white !important;
+}
+
+.btn-limpar{
+  background-color: #0070723b;
+  color: #007172;
+}
+.btn-limpar:hover{
+  background-color: #007172;
+  color: #fff;
+}

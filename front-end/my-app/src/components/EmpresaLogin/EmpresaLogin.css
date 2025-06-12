@@ -1,0 +1,87 @@
+:root {
+    --cinza: #f8f8fa;
+    --laranja: #bd4b0d;
+    --laranja-claro: #d94f04;
+    --laranja-opacidade: #bd4b0d78;
+    --verde: #007172;
+    --verde-escuro: #025259;
+    --verde-claro: #038a7e;
+    --verde-opacidade: #038a7e6b;
+}
+h4{
+    color: #007172;
+}
+.login-empresa-form .form-label {
+    text-align: left;
+    display: block;
+}
+
+.btn-empresa {
+    color: #fff9ee;
+    background-color: var(--verde);
+    border-color: var(--azul);
+    border: 1px solid var(--azul-claro);
+    margin-top: 4px;
+}
+.btn-empresa:hover {
+    background-color: var(--verde-claro);
+    border: 1px solid var(--azul-claro);
+    color: #fff9ee;
+}
+.btn-empresa:active{
+    border: 1px solid var(--azul-claro);
+    color: var(--verde);
+}
+
+.form-row {
+    background-color: var(--cinza);
+}
+
+.texto-verde, .empresalogin {
+    color: var(--verde);
+}
+
+.login-empresa-form input,
+.login-empresa-form select {
+    border: 1px solid var(--verde);
+    border-radius: 10px;
+    background-color: #fff !important;
+    color: var(--verde-escuro);
+}
+
+.login-empresa-form input:focus,
+.login-empresa-form select:focus {
+    border: 1px solid var(--verde);
+    box-shadow: 0 0 0 .25rem var(--verde-opacidade);
+}
+
+
+a.cadastro {
+    text-decoration: none !important;
+    color: var(--verde-escuro) !important;
+    padding: 20px !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #000;
+    background-color: #fff;
+}
+
+.form-container {
+    max-width: 350px;
+    width: 100%;
+}
+
+.cadastro-empresa-link-container {
+    margin-top: 20px;
+}
+
+.cadastro-empresa-link-container a {
+    text-decoration: none;
+    color: var(--laranja-claro) !important;
+    transition: .2s;
+}
+.cadastro-empresa-link-container a:hover {
+    text-decoration: underline;
+    filter: brightness(.8);
+}

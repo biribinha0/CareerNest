@@ -1,0 +1,117 @@
+.card {
+  background-color: #f1f1f1;
+  width: 500px;
+  height: 450px;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.titlesection {
+  min-height: 80px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.2;
+  width: 70%;
+  word-break: break-word;
+  color: black;
+}
+
+.id {
+  background-color: rgba(0, 113, 114, 0.2);
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 15px;
+  height: fit-content;
+  white-space: nowrap;
+  color: white;
+}
+
+.linha {
+  height: 1px;
+  width: 100%;
+  background-color: var(--caribbean-current);
+  margin-top: 12px;
+}
+
+.infos {
+  min-height: 180px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+i.icon {
+  color: var(--caribbean-current);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon p {
+  margin: 0;
+  color: black;
+}
+
+.buttonspace {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 100%;
+  border-radius: 12px;
+  padding: 12px;
+  background: none;
+  color: black;
+  border: 1px solid var(--caribbean-current);
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--caribbean-current);
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 350px; 
+    max-width: 90%;
+    height: 320px; 
+    padding: 30px;
+    margin: 0 auto;
+  }
+
+  .titlesection,
+  .infos,
+  .buttonspace {
+    min-height: unset;
+  }
+
+  .linha {
+    width: 100%;
+  }
+
+}

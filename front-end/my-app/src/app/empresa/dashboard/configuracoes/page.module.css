@@ -1,0 +1,23 @@
+button.btn{
+    background-color: var(--laranja);
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+
+button.btn:hover{
+    background-color: var(--laranja-claro);
+}
+
+button.BtnSair {
+    background-color: var(--laranja) ;
+    color: #fff;
+    border: solid 1px #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+}

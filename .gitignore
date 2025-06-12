@@ -1,0 +1,6 @@
+# Ignorar node_modules
+back-end/node_modules/
+front-end/my-app/node_modules/
+
+# Ignorar arquivos de build do Next.js
+front-end/my-app/.next/

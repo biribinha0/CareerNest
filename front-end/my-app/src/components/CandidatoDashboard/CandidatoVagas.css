@@ -1,0 +1,35 @@
+.select,
+.selectVagas {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 16px;
+  height: 50px;
+  outline: none;
+  box-shadow: none;
+  transition: border 0.2s ease;
+  color: #000000;
+  width: 100%;
+}
+
+.selectVagas {
+  width: 100%;
+  max-width: 300px;
+}
+.btn-limpar{
+  background-color: #0070723b;
+  color: #007172;
+}
+.btn-limpar:hover{
+  background-color: #007172;
+  color: #fff;
+}
+.botaozinho{
+  background-color: #014648;
+  color: #ffffffd9;
+  width: 150px;
+}
+.botaozinho:hover{
+  background-color: #609091;
+}

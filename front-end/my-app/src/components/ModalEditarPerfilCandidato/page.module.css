@@ -1,0 +1,60 @@
+button.buttonEditar {
+    background-color: var(--caribbean-current);
+    height: 35%;
+    border-radius: 10px;
+}
+
+button.buttonEditar:hover{
+    background-color: var(--midnight-green);
+}
+
+
+button.buttonEditar:active {
+  background-color: var(--midnight-green) !important;
+  color: white;
+}
+
+button.buttonEditar:focus {
+    background-color: var(--midnight-green) !important;
+    color: white;
+  }
+
+.btnAdicionar{
+    background-color: inherit;
+    border: 1px solid var(--verde);
+    color: var(--verde);
+}
+.btnAdicionar:hover{
+    background-color: #007172;
+    color: #fff;
+}
+.btnAdicionar:active{
+    background-color: #08383d !important;
+    color: #fff;
+}
+button.btnExcluir{
+    color: red;
+    background-color: inherit;
+}
+
+button.btnExcluir:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(168, 11, 11);
+}
+
+
+button.buttonSave {
+    background-color: #007172;
+    border: none;
+    color: white;
+}
+
+button.buttonSave:hover {
+    background-color: var(--midnight-green);
+    
+}
+
+button.buttonSave:focus:active {
+    background-color: var(--midnight-green);
+    
+}

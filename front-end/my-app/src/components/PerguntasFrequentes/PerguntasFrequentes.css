@@ -1,0 +1,105 @@
+:root {
+
+    /* Paleta de Cores da Empresa */
+    --midnight-green: #025259ff;
+    --caribbean-current: #007172ff;
+    --carrot-orange: #f29325ff;
+    --syracuse-red-orange: #d94f04ff;
+    --isabelline: #f5f0efff;
+    --azure-web: #f0ffffff;
+
+}
+
+.faq-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 2rem;
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-item {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #f3a620;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .faq-question {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0.5rem 0; 
+    color: #333; 
+    transition: color 0.3s ease; 
+  }
+  
+  .faq-question:hover {
+    color: #f3a620; 
+  }
+  
+  .faq-answer {
+    margin-top: 0.5rem;
+    color: #444;
+    font-size: 1rem;
+    padding: 0.5rem 0; 
+    background-color: #f1f1f1; 
+    border-radius: 4px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+
+  .faq-container span{
+    color: var(--midnight-green);
+  }
+  
+  .faq-answer {
+    margin-top: 0.5rem;
+    color: #444;
+    font-size: 1rem;
+    padding: 1rem; 
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .faq-answer {
+    transition: all 0.3s ease;
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    padding: 0 1rem;
+  }
+  
+  .faq-answer.open {
+    max-height: 500px; 
+    opacity: 1;
+    padding: 1rem;
+  }
+  
+  
+  .faq-question i {
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-question.open i {
+    transform: rotate(180deg); 
+  }
+  

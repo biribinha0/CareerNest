@@ -1,0 +1,90 @@
+.localhora {
+    color: #c2c1c7;
+}
+.vaga{
+    color: #212529;
+}
+.id {
+    background-color: rgba(0, 113, 114, 0.2);
+    padding: 5px;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+button.aplicar{
+    padding: 10px;
+    width: 10%;
+    background-color: var(--caribbean-current);
+    border-radius: 20px;
+    border: none;
+}
+
+.Containermaior {
+    border: 1px solid #e2e2e2;
+    border-radius: 20px;
+    margin: 0;
+}
+
+h1.sobrevagaTitles {
+    color: var(--caribbean-current);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.informacoes {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+
+p.media {
+    color: #535355;
+    font-size: 15px;
+}
+p.mediaSalario {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p.titlemiddle {
+    font-size: 15px;
+}
+
+p.subtitlemiddle {
+    font-size: 12px;
+    color: #535355;
+}
+
+.icon {
+    color: #535355;
+}
+
+img.logoImagem {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: white !important;
+}
+
+h1.empresaNome {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+
+
+
+@media (max-width: 768px) {
+    button.aplicar {
+        width: 100%;
+    }
+    .id {
+        display: none;
+    }
+    .localhora{
+        margin-top: 20px;
+    }
+}

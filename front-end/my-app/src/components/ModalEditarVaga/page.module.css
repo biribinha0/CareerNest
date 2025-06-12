@@ -1,0 +1,37 @@
+button.buttonSave{
+    background-color: var(--caribbean-current);
+    color: white;
+    border-radius: 12px;
+}
+button.buttonSave:hover {
+    background-color: var(--caribbean-current);
+}
+.btnAdicionar{
+    background-color: inherit;
+    border: 1px solid var(--verde);
+    color: var(--verde);
+}
+.btnAdicionar:hover{
+    background-color: #007172;
+    color: #fff;
+}
+.btnAdicionar:active{
+    background-color: #08383d !important;
+    color: #fff;
+}
+.deletar-botao:hover{
+    
+    color: #fff;
+}
+button.deletar-botao:active{
+    
+    color: #fff;
+}
+
+.inputEditar:focus{
+    box-shadow: 0 0 0 0.25rem rgba(228, 131, 20, 0.2)
+}
+
+.selecEditart:focus{
+    box-shadow: none;
+}

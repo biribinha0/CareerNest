@@ -1,0 +1,49 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000004f;
+    z-index: 1040;
+}
+
+.modal-dialog {
+    height: 100%;
+}
+
+.cancelar {
+    background-color: inherit;
+    color: #dc3545;
+}
+.cancelar:hover {
+    background-color: #dc354644;
+    color: #dc3545;
+}
+.cancelar:active{
+    color: #dc3545 !important;
+}
+
+.btn-confirmar{
+    background-color: #00707238;
+    color: #007172;
+}
+.btn-confirmar:hover{
+    background-color: #007172;
+    color: #fff;
+}
+.btn-confirmar:active{
+    color: #007172 !important;
+}
+
+.btn-fechar {
+    background-color: #dc354644;
+    color: #dc3545;
+}
+.btn-fechar:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+.btn-fechar:active{
+    color: #dc3545 !important;
+}

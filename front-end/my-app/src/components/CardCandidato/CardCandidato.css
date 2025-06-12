@@ -1,0 +1,156 @@
+.card-candidato {
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 400px;
+  transition: .5s;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.card-avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-nome {
+  margin: 0;
+  font-weight: 600;
+  color: #000000;
+}
+
+.card-data {
+  font-size: 0.875rem;
+  color: #535355;
+}
+
+.card-divider {
+  margin: 12px 0;
+  height: 1px;
+  background-color: #281e1e;
+  border: none;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px !important;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.detalhes {
+  color: #000000;
+}
+
+.detalhes:hover {
+  background-color: #007172;
+  color: #fff;
+}
+
+.btn-detalhes {
+  background-color: inherit;
+  color: #007172;
+  border: 1px solid #007172
+}
+.btn-detalhes:hover {
+  background-color: #007172;
+  color: #fff;
+}
+
+.btn-detalhes:active {
+  color: #007172 !important;
+}
+
+.btn-detalhes:active {
+  color: #007172 !important;
+}
+
+.btn-aceitar {
+  background-color: #c3e6cb;
+  color: #28a745;
+}
+
+.btn-aceitar:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-aceitar:active {
+  color: #28a745 !important;
+}
+
+.btn-rejeitar {
+  background-color: #f5c6cb;
+  color: #dc3545;
+}
+
+.btn-rejeitar:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-rejeitar:active {
+  color: #dc3545 !important;
+}
+
+.pai-candidato:hover .card-candidato {
+  box-shadow: 0 5px 10px #ccc;
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.card-candidato {
+  position: relative;
+  z-index: 1;
+}
+
+.gradebotoes {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  /* transition: step-end; */
+  z-index: 2;
+  background-color: #f6f6f6;
+  animation: gradebotoes 0.4s ease;
+
+}
+
+.pai-candidato:hover .gradebotoes {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+@keyframes gradebotoes {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .card-info {
+    flex-direction: row;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

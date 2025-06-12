@@ -1,0 +1,257 @@
+.textoleft p {
+  text-align: left;
+  font-family: poppins;
+  color: #1d202d;
+  font-size: xx-large;
+}
+
+.found {
+  background-color: #f29325;
+  color: #fff9ee;
+  border: none;
+  margin-top: 4px;
+  padding: 18px 30px;
+  border-radius: 20px;
+  font-size: large;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.found:hover {
+  background-color: #f8a14f; 
+  color: #fff9ee;
+}
+
+.found:focus,
+.found:active {
+  background-color: #bd4b0d; 
+  color: #fff9ee;
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+
+.search-container {
+  border-radius: 30px;
+}
+
+.input {
+  width: 500px;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.11);
+  /* Sombra para dar profundidade */
+  padding: 20px;
+  font-size: small;
+  outline: none;
+  background-color: #fffefc;
+  color: #1d202d;
+
+}
+
+.buttonSearch {
+  position: absolute;
+  padding: 15px;
+  right: 0;
+  height: 100%;
+  background: none;
+  border: none;
+  color: #000000;
+}
+
+.buttonSearch:hover {
+  color: #d94f04;
+}
+.buttonSearch:active{
+  color: #d94f04;
+}
+
+
+.procura {
+  text-align: center;
+  color: var(--midnight-green);
+}
+
+.subtitulopage {
+  text-align: center;
+  color: #025259;
+}
+
+.spanTitle{
+  color: var(--carrot-orange);
+  font-weight: bold;
+}
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.linha-central-horizontal {
+  position: absolute;
+  top: 0;
+  left: 28%;
+  height: 100%;
+  width: 35px;
+  background: linear-gradient(107deg, #f29325, #d94f04);
+  z-index: 1;
+}
+
+.linha-vertical-topo {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  height: 35px;
+  width: 100%;
+  background: linear-gradient(177deg, #ffbd71, #d94f04);
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+.linha-vertical-base {
+  position: absolute;
+  top: 99%;
+  right: 72%;
+  height: 35px;
+  width: 100%;
+  background: linear-gradient(107deg, #f29325, #d94f04);
+  transform: translateX(100%);
+  z-index: 1;
+}
+
+.timeline-item {
+  position: relative;
+  z-index: 2;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titlebox{
+  font-size: 50px;
+}
+.timeline-item img {
+  z-index: 2;
+}
+
+/* responsividade com o mediaaaa */
+@media (max-width: 768px) {
+  .linha-central {
+    left: 20px;
+    transform: none;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+  }
+  .bg-branco{
+    background-color: #f2efef;
+    box-shadow: 0 5px 20px #00000015;
+  }
+
+  .img-container,
+  .timeline-item>div {
+    margin-bottom: 1rem;
+  }
+}
+
+.subtitulopage {
+  font-size: large;
+  color: #004d4d;
+}
+ 
+.titulocard {
+  color: #ffff;
+  width: 100%;
+  font-size: 5rem;
+}
+ 
+.boxEmpresa {
+  width: 100%;
+  height: auto;
+  background-color: #007172;
+  border-radius: 40px;
+}
+ 
+.cardBody {
+  border: solid 3px;
+  border-radius: 45px;
+  border-color: #f29325;
+  text-align: justify;
+}
+ 
+.pfHome {
+  color: #007172;
+  font-family: poppins;
+  margin-top: 40px;
+}
+.caixaLaranja{
+  border-radius: 30px;
+  background-color: #f29325;
+}
+.titulograndemenor{
+  color: #fff7ef;
+  font-size: 4rem;
+}
+.borda{
+  color: var( --caribbean-current)
+}
+.caixamvv{
+  background-color: #f5f5f5;
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.125);
+}
+.tituloempresas{
+  color: var(--midnight-green);
+}
+.spanempresas{
+  color: var(--carrot-orange);
+  font-size: xx-large;
+}
+.subtitulo{
+  font-size: large;
+  color: var(--midnight-green);
+}
+.caroussel-container{
+  position: relative;
+  overflow: hidden;
+}
+.caroussel-container::before, .caroussel-container::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+.caroussel-container::before{
+  left: 0;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgba(255,255,255,0));;
+}
+.caroussel-container::after{
+  right: 0;
+  background: linear-gradient(to left, rgb(255, 255, 255), rgba(255,255,255,0));;
+}
+.titlebox{
+  color: var(--midnight-green);
+  font-family: poppins;
+}
+.boxspan{
+  color: var(--carrot-orange);
+  font-family: poppins;
+}
+.paragrafozinho{
+  color: black;
+  font-family: poppins;
+}
+
+.portaiscard {
+  transition: transform 0.3s ease-in-out;
+}
+
+.portaiscard:hover {
+  transform: scale(1.05);
+}

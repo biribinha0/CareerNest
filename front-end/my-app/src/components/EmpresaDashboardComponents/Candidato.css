@@ -1,0 +1,37 @@
+.perfil-container {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-lateral {
+  border-right: 1px solid #dee2e6;
+}
+
+.text-laranja {
+    color: #d94f04;
+}
+.bg-laranja{
+  background-color: #d94f04;
+  color: #fff;
+}
+
+p.break-word{
+  word-break: break-all; 
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 90%;
+}
+
+.verde{
+  background-color: #007172 !important;
+}
+.laranja{
+  background-color: #d94f04 !important;
+}
+
+.text-wrap {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+
+}

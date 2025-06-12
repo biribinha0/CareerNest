@@ -1,0 +1,327 @@
+:root {
+    --cinza: #f8f8fa;
+    --laranja: #bd4b0d;
+    --laranja-opacidade: #bd4b0da9;
+    --amarelo: #eda92a;
+    --laranja-claro: #d94f04;
+    --amarelo-claro: #fabe4e;
+    --verde-agua: #007172;
+    --verde-escuro: #025259
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.container.container-sidebar{
+    display: flex;
+    width: 100%;
+}
+
+
+.bg-preto {
+    background-color: #000;
+}
+
+.side-bar .nav-link {
+    color: #c6c1c1;
+    transition: .2s;
+}
+
+.side-bar .nav-link:hover {
+    background-color: #776c6c6b;
+    color: #fff;
+}
+
+.active {
+    background-color: var(--laranja) !important;
+    color: #fff;
+}
+
+.recrutamento {
+    max-width: auto;
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px solid #ffffff48;
+}
+
+.empresa-logo {
+    width: 20%;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #000;
+}
+
+.active-page-container {
+    background-color: #f8f8fa;
+}
+
+
+@keyframes titulo-appear {
+    0% {
+        transform: translateX(-25px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.pagina-titulo {
+    max-width: fit-content;
+    display: inline-block;
+    position: relative;
+    border-bottom: 3px solid var(--laranja-claro);
+    animation: titulo-appear .3s ease forwards;
+}
+
+.content-area{
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 2px 2px #e0e0e0;
+}
+
+.sidebar-toda{
+    background-color: rgb(0, 0, 0);
+    box-shadow: #000000 0px 0px 10px;
+}
+
+.side-bar{
+    position: relative;
+    z-index: 2;
+}
+.pagina-ativa{
+    background-color: #fff;
+    box-shadow: 0 0 3px #ccc;
+}
+.btn-custom {
+    background-color: #bd4b0d;
+    border-color: #bd4b0d;
+    color: #fff;
+}
+
+.btn-custom:hover {
+    background-color: #a8430c;
+    border-color: #a8430c;
+    color: #fff;
+}
+.btn-empresaLogada{
+    background-color: inherit;
+    color: #000;
+    border: none;
+}
+.btn-empresaLogada:hover{
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.seta-dropdown::before{
+  transition: transform 0.2s ease;
+}
+
+.btn-empresaLogada.show .seta-dropdown::before {
+  transform: rotate(180deg);
+}
+
+.btn-empresaLogada::after{
+    all: unset;
+}
+
+.btn-criar {
+    background-color: var(--verde-agua);
+    border: none;
+    color: #fff;
+}
+
+.btn-criar:hover{
+    background-color: var(--verde-escuro);
+}
+
+.btn-criar:active{
+    background-color: inherit;
+    border: none;
+    box-shadow: 0 0 0 1px var(--verde-agua);
+    color: var(--verde-agua) !important;
+}
+
+.searchvaga{
+    width: 30%;
+}
+
+
+
+.sidebar {
+    margin-left: 0;
+    padding-left: 0;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: #f1f1f1;
+    color: #000;
+}
+.vagasrecente{
+    background-color: #fafafa;
+}
+.small.mt-1{
+    color: #d94f04 !important;
+}
+
+@media (max-width: 576px) {
+    .searchvaga{
+        width: 100%;
+    }
+}
+
+.sidebar-toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1030;
+    background-color: var(--verde-escuro);
+    border: 1px solid var(--verde-agua);
+    padding: 2px 8px;
+}
+
+.sidebar-toggle-btn:hover {
+    background-color: var(--verde-agua);
+}
+
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 767.98px) {
+    .sidebar-toda {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100vh;
+        overflow-y: auto;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1045;
+    }
+
+    .sidebar-toda.open {
+        transform: translateX(0);
+    }
+
+    .container-fluid {
+        flex-direction: column !important;
+    }
+
+    .sidebar-close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 10;
+    }
+
+    .active-page-container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+.btn-perfil{
+    background-color: inherit;
+    border: 1px solid #bd4b0d;
+    color: #bd4b0d;
+}
+.btn-perfil:hover{
+    background-color: #bd4b0d;
+    color: #fff;
+}
+.btn-perfil:active{
+    color: #bd4b0d !important;
+}
+
+@media (min-width: 768px) {
+    .sidebar-toda {
+        position: relative;
+        transform: none;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .sidebar-close-btn {
+        display: none;
+    }
+}
+
+.btn-cancelar {
+    color: #fff;
+    background-color: #0d6efd !important; /* azul Bootstrap */
+    border: 1px solid #0d6efd !important;
+  }
+
+  .btn-cancelar:hover {
+    background-color: #0b5ed7 !important;
+    border-color: #0a58ca;
+  }
+
+  .btn-excluir {
+    color: #fff;
+    background-color: #dc3545; /* vermelho Bootstrap */
+    border: 1px solid #dc3545;
+  }
+
+  .btn-excluir:hover {
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+  }
+
+  button.btn.btn-cancela {
+    background-color: #007172 !important;
+    color: #fff;
+}
+  button.btn.btn-apaga {
+    background-color: rgb(255, 0, 0) !important;
+    color: #fff;
+}
+  button.btn.btn-cancela:hover {
+    background-color: #08383d !important;
+    color: #fff;
+}
+  button.btn.btn-apaga:hover {
+    background-color: rgb(171, 0, 0) !important;
+    color: #fff;
+}
+
+.botao-verde{
+    background-color: #007172 !important;
+    color: white;
+    border-color: #08383d !important;
+}
+.botao-verde:hover{
+    background-color: #0b616a !important;
+    color: white;
+    border-color: #08383d !important;
+}
+
+a.icone-voltar{
+    color: #000;
+}

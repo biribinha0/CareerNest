@@ -1,0 +1,91 @@
+:root {
+    --cinza: #f8f8fa;
+    --laranja: #bd4b0d;
+    --laranja-opacidade: #bd4b0d78;
+}
+.cadastro-form .form-label {
+    text-align: left;
+    display: block;
+}
+.found {
+    color: #fff9ee;
+    background-color: var(--laranja);
+    border-color: #eda92a;
+    margin-top: 4px;
+}
+.found:hover {
+    background-color: #d94f04;
+    border: 1px solid #fabe4e;
+    color: #fff9ee;
+}
+.form-row {
+    background-color: var(--cinza);
+}
+.texto-laranja {
+    color: var(--laranja);
+}
+.cadastro-form input,
+.cadastro-form textarea,
+.cadastro-form div.select__control,
+.cadastro-form select {
+    border: 1px solid var(--laranja);
+    border-radius: 10px;
+    background-color: #fff !important;
+}
+.cadastro-form input:focus,
+.cadastro-form textarea:focus,
+.cadastro-form div.select__control--is-focused,
+.cadastro-form select:focus {
+    border: 1px solid var(--laranja);
+    box-shadow: 0 0 0 .25rem var(--laranja-opacidade);
+}
+.select__control input {
+    box-shadow: none !important;
+}
+.cadastro-form select option:hover {
+    background-color: var(--laranja-opacidade);
+}
+.form-container {
+    max-width: 350px;
+    width: 100%;
+}
+
+
+.passos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.passo{
+    width: 40px;
+    height: 40px;
+    background-color: #f2f2f2;;
+    border-radius: 50%;
+    color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+.passo.ativo{
+    background-color: var(--laranja);
+    color: #fff;
+}
+
+.linha{
+    height: 2px;
+    width: 60px;
+    background-color: #eee;
+    margin: 0 10px;
+    transition: background-colos .3s ease;
+}
+.linha.active{
+    background-color: var(--laranja-opacidade);
+}
+
+  
+  

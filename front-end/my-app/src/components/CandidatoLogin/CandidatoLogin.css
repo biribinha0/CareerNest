@@ -1,0 +1,85 @@
+:root {
+    --cinza: #f8f8fa;
+    --laranja: #bd4b0d;
+    --laranja-opacidade: #bd4b0d78;
+    --amarelo: #eda92a;
+    --laranja-claro: #d94f04;
+    --amarelo-claro: #fabe4e;
+    --azul-link: #007172;
+}
+
+.login-candidato-form .form-label {
+    text-align: left;
+    display: block;
+}
+
+.btn-candidato {
+    color: #fff9ee;
+    background-color: var(--laranja);
+    border-color: var(--laranja);
+    margin-top: 4px;
+}
+
+.btn-candidato:hover {
+    background-color: var(--laranja-claro);
+    border: 1px solid var(--laranja-claro);
+    color: #fff9ee;
+}
+
+.form-row {
+    background-color: var(--cinza);
+}
+
+.texto-laranja, .candidatologin {
+    color: var(--laranja);
+}
+
+.login-candidato-form input,
+.login-candidato-form select {
+    border: 1px solid var(--laranja);
+    border-radius: 10px;
+    background-color: #fff !important;
+}
+
+.login-candidato-form input:focus,
+.login-candidato-form select:focus {
+    border: 1px solid var(--laranja);
+    box-shadow: 0 0 0 .25rem var(--laranja-opacidade);
+}
+
+.login-candidato-form select option:hover {
+    background-color: var(--laranja-opacidade);
+}
+
+a.cadastro {
+    text-decoration: none !important;
+    color: var(--laranja) !important;
+    padding: 20px !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #000;
+    background-color: var(--laranja);
+}
+
+.candidatologin{
+   color: #bd4b0d; 
+}
+.form-container {
+    max-width: 350px;
+    width: 100%;
+}
+.cadastro-candidato-link-container {
+    margin-top: 20px;
+}
+
+.cadastro-candidato-link-container a {
+    text-decoration: none;
+    color: var(--azul-link) !important;
+    transition: .2s;
+}
+
+.cadastro-candidato-link-container a:hover {
+   text-decoration: underline;
+   filter: brightness(.8);
+}

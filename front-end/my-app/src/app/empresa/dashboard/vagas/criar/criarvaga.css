@@ -1,0 +1,74 @@
+:root {
+    --cinza: #f8f8fa;
+    --verde: #007172;
+    --verde-opacidade: #0070726d;
+    --verde-escuro: #025259
+}
+.vaga-form .form-label {
+    text-align: left;
+    display: block;
+}
+.found {
+    color: #fff9ee;
+    background-color: var(--verde);
+    border-color: var(--verde-escuro);
+    margin-top: 4px;
+}
+.found:hover {
+    background-color: var(--verde-escuro);
+    border: 1px solid var(--verde-opacidade);
+    color: #fff9ee;
+}
+.form-row {
+    background-color: var(--cinza);
+}
+.texto-verde {
+    color: var(--verde);
+}
+.vaga-form input.form-control,
+.vaga-form textarea,
+.vaga-form div.select__control {
+    border: 1px solid var(--verde);
+    border-radius: 10px;
+    background-color: #fff ;
+}
+.vaga-form input.form-control:focus,
+.vaga-form textarea:focus,
+.vaga-form div.select__control--is-focused {
+    border: 1px solid var(--verde);
+    box-shadow: 0 0 0 .25rem var(--verde-opacidade) !important;
+}
+.vaga-form select option:hover {
+    background-color: var(--verde-opacidade);
+}
+.select__control input, input {
+    box-shadow: none !important;
+    background-color: inherit;
+}
+.form-container {
+    max-width: 350px;
+    width: 100%;
+}
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #f6f6f6 inset !important;
+  -webkit-text-fill-color: #292929 !important;
+}
+
+.btn-adicionar{
+    background-color: inherit;
+    border: 1px solid var(--verde);
+    color: var(--verde);
+}
+.btn-adicionar:hover{
+    background-color: #007172;
+    color: #fff;
+}
+.btn-excluir{
+    background-color: inherit;
+    border: 1px solid #ff0000;
+    color:#ff0000;
+}
+.btn-excluir:hover{
+    background-color: #ff0000;
+    color: #fff;
+}

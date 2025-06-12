@@ -1,0 +1,68 @@
+:root {
+
+    /* Paleta de Cores da Empresa */
+    --midnight-green: #025259ff;
+    --caribbean-current: #007172ff;
+    --carrot-orange: #f29325ff;
+    --syracuse-red-orange: #d94f04ff;
+    --isabelline: #f5f0efff;
+    --azure-web: #f0ffffff;
+
+}
+
+.bg-verde-gradiante {
+    background-color: var(--caribbean-current);
+}
+
+.bg-verde-gradiante h1,
+p {
+    font-family: 'inter';
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.bg-teal {
+    background-color: #007373;
+}
+
+.bg-orange {
+    background-color: var(--carrot-orange);
+}
+
+.text-orange {
+    color: var(--carrot-orange);
+}
+
+button.btn.btn-light.px-4 {
+    background-color: #ffc988;
+    color: white
+}
+
+button.btn.btn-light.px-4:hover {
+    background-color: #ffbe6f;
+    color: white
+}
+
+.perguntas {
+    color: var(--caribbean-current)
+}
+
+.titulogrande {
+    font-size: 380% !important;
+}
+
+.titulograndemenor {
+    font-size: 280%;
+}
+
+@media (max-width: 576px) {
+    .titulogrande {
+        font-size: 2.5rem !important;
+    }
+
+    .titulograndemenor {
+        font-size: 2rem !important;
+    }
+}

@@ -1,0 +1,135 @@
+:root {
+    --cinza: #f8f8fa;
+    --verde: #007172;
+    --verde-opacidade: #0070726d;
+    --verde-escuro: #025259
+}
+.cadastro-form .form-label {
+    text-align: left;
+    display: block;
+}
+.found {
+    color: #fff9ee;
+    background-color: var(--verde);
+    border-color: var(--verde-escuro);
+    margin-top: 4px;
+}
+.found:hover {
+    background-color: var(--verde-escuro);
+    border: 1px solid var(--verde-opacidade);
+    color: #fff9ee;
+}
+.form-row {
+    background-color: var(--cinza);
+}
+.texto-verde {
+    color: var(--verde);
+}
+.cadastro-form input,
+.cadastro-form textarea,
+.cadastro-form select {
+    border: 1px solid var(--verde);
+    border-radius: 10px;
+    background-color: #fff !important;
+}
+.cadastro-form input:focus,
+.cadastro-form textarea:focus,
+.cadastro-form select:focus {
+    border: 1px solid var(--verde);
+    box-shadow: 0 0 0 .25rem var(--verde-opacidade);
+}
+.cadastro-form select option:hover {
+    background-color: var(--verde-opacidade);
+}
+.form-container {
+    max-width: 350px;
+    width: 100%;
+}
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #f6f6f6 inset !important;
+  -webkit-text-fill-color: #292929 !important;
+}
+
+.passos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.passo{
+    width: 40px;
+    height: 40px;
+    background-color: #f2f2f2;;
+    border-radius: 50%;
+    color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+.passo.ativo{
+    background-color: var(--verde);
+    color: #fff;
+}
+
+.linha{
+    height: 2px;
+    width: 60px;
+    background-color: #eee;
+    margin: 0 10px;
+    transition: background-color.3s ease;
+}
+.linha.active{
+    background-color: var(--verde-opacidade);
+}
+
+  
+  
+
+.logo-upload {
+  gap: 0.5rem;
+}
+
+.upload-label {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #ced4da;
+  transition: border-color 0.3s ease;
+}
+
+.upload-label:hover {
+  border-color: var(--verde); 
+}
+
+.camera-icon {
+  font-size: 2rem;
+  color: #6c757d;
+}
+
+.preview-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.file-label {
+  font-size: 0.9rem;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 0.25rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+.bi-camera{
+    color: var(--verde);
+}
