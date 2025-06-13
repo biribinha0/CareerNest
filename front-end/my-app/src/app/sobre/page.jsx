@@ -44,7 +44,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="container-fluid p-3 my-2">
-                <div className="borda container p-2  border-top border-bottom border-4 " style={{ height: 'auto' }}> 
+                <div className=" container p-2  border-top border-bottom border-4 " style={{ height: 'auto' }}> 
                     <div className="bg-branco container d-flex justify-content-center  my-3" style={{ height: 'auto' }}>
                         <div className="oswaldo p-2 row">
                             <h2>PARA O FUTURO E ALÉM!</h2>

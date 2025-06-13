@@ -51,16 +51,13 @@
     color: var(--carrot-orange);
 }
 
-.borda {
-    border-color: red;
-}
 
 .titulogrande {
     font-size: 380% !important;
 }
 
 .titulograndemenor {
-    font-size: 280%;
+    font-size: 280% !important;
 }
 
 .textodelimitado {
@@ -72,7 +69,8 @@
 }
 
 .text-justify {
-    text-align: justify;
+    text-align: justify !important;
+    font-size: 16px;
 }
 
 .estrelas {
